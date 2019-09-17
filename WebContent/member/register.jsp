@@ -50,7 +50,7 @@ window.onload = function(){
 					<td colspan="2"><b style="color: #FFFFFF">회원 가입</b></td>
 
 				</tr>
-
+	
 				<tr>
 
 					<td width="16%">아이디</td>
