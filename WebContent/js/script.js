@@ -69,3 +69,17 @@ function inputCheck(){
 		
 
 }
+
+function memberUpdate(){
+	//alert('a');
+	//입력자료 검사 생략...
+	document.updateForm.submit();
+}
+function memberUpdateCancel(){
+	alert('b');
+	//history.back();
+	location.href="../guest/guest_index.jsp";
+}
+function memberDelete(){
+	alert('회원탈퇴');
+}

@@ -1,6 +1,6 @@
 package shop.member;
 
-public class MemberBean {
+public class MemberBean { //FormBean
 	private String id,passwd,name,email,phone,zipcode,address,job;
 
 	public String getId() {
