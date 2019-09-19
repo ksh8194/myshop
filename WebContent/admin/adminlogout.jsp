@@ -7,10 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 <%
-
-response.sendRedirect("guest/guest_index.jsp");
+session.removeAttribute("adminKey");
 %>
+<script type="text/javascript">
+alert("관리자 로그아웃 성공");
+location.href="../index.jsp";
+</script>
 </body>
 </html>
