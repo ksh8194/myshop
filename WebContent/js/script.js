@@ -98,10 +98,56 @@ function memberUpdateCancelAdmin() {
 	location.href="membermanager.jsp";
 }
 
+//관리자/고객이 상품처리
+function productDetail(no) {
+	//alert(no);
+	document.detailFrm.no.value = no;
+	document.detailFrm.submit();
+}
+
+function productUpdate(no){
+	//alert(no);
+	document.updateFrm.no.value = no;
+	document.updateFrm.submit();
+}
+
+function productDelete(no){
+	//alert(no);
+	if(confirm('정말 삭제할까요?')){
+		document.delFrm.no.value = no;
+		document.delFrm.submit();
+	}
+}
+
+//카트 처리
+function cartUpdate(form){
+	form.flag.value = "update";
+	form.submit();
+}
+
+function cartDelete(form){
+	form.flag.value = "del";
+	form.submit();
+}
+
+//관리자가 주문처리
+function orderDetail(no){
+	//alert(no);
+	document.detailFrm.value = no;
+	document.detailFrm.submit();
+	
+}
+
+function orderUpdate(form){
+	document.detailFrm.flag.value="update";
+	document.detailFrm.submit();
+}
 
 
-
-
+function orderDelete(form){
+	document.detailFrm.flag.value="delete";
+	document.detailFrm.submit();
+}
 
 
 

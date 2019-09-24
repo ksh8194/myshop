@@ -36,7 +36,7 @@
   	<td><%=p.getPrice() %></td>
   	<td><%=p.getSdate() %></td>
   	<td><%=p.getStock() %></td>
-  	<td>상세보기</td>
+  	<td><a href="javascript:productDetail('<%=p.getNo() %>')">상세보기</a></td>
   </tr>
   <%
 	  }
@@ -45,6 +45,10 @@
 </table>
 
 <%@include file="admin_bottom.jsp" %>
+
+<form action="productdetail.jsp" name="detailFrm" method="post">
+<input type="hidden" name="no">
+</form>
 </body>
 </html>
 

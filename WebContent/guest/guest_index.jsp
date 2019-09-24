@@ -17,6 +17,7 @@
 
 <%@ include file="guest_top.jsp" %>
 <table style="width:90%">
+
 <% if(memid !=null){ %>
 <tr style="text-align:center;">
 <td style="font-size:20px;">

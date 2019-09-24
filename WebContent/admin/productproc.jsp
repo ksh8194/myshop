@@ -6,12 +6,12 @@ String flag = request.getParameter("flag");
 boolean result = false;
 
 if(flag.equals("insert")){
-	result = productMgr.insertProduct(request); 
+	result = productMgr.insertProduct(request);
 }else if(flag.equals("update")){
-	
+	result = productMgr.updateProduct(request);
 }else if(flag.equals("delete")){
-	
-}else{
+	result = productMgr.deleteProduct(request.getParameter("no")); 
+}else{ 
 	response.sendRedirect("productmanager.jsp");
 }
 
